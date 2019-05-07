@@ -1,0 +1,400 @@
+* {
+  font-family: serif;
+}
+
+/* -------------header------------ */
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  clear: both;
+  padding: 5px 0px 5px;
+  border-bottom: 0.4px solid #bec9d1;
+}
+
+.title {
+  color: rgb(2, 2, 58);
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 90px;
+  letter-spacing: 0.08em;
+  font-family: serif;
+}
+
+.title_2 {
+  color: rgb(2, 2, 58);
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 90px;
+  letter-spacing: 0.08em;
+  font-family: serif;
+  text-decoration: none;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  list-style-type: none;
+  padding-right: 30px;
+  letter-spacing: -0.03em;
+}
+
+.sign_up {
+  background-color: #f2f2f2;
+  color: rgb(2, 2, 58);
+  padding: 8px 7px 8px 7px;
+  margin: 9px 0px 5px;
+  box-shadow: 0px 0px 3px white;
+  font-family: serif;
+  letter-spacing: 0.03em;
+  font-family: serif;
+  text-decoration: none;
+}
+
+.log_in {
+  background-color: #f2f2f2;
+  color: rgb(2, 2, 58);
+  padding: 8px 9px 9px 9px;
+  margin: 9px 0px 5px;
+  box-shadow: 0px 0px 3px white;
+  font-family: serif;
+  letter-spacing: 0.05em;
+  font-family: serif;
+  text-decoration: none;
+}
+
+.log_out {
+  background-color: #f2f2f2;
+  color: rgb(2, 2, 58);
+  padding: 8px 9px 9px 9px;
+  margin: 10px 0px 5px;
+  box-shadow: 0px 0px 3px white;
+  font-family: serif;
+  letter-spacing: 0.02em;
+  font-family: serif;
+  text-decoration: none;
+}
+
+/* -------------about------------ */
+
+.about {
+  width: 100%;
+  font-family: serif;
+}
+
+.site-title-wrapper {
+  padding: 115px 0px 50px 70px;
+  height: 30vh;
+  background-color: rgb(231, 231, 231);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.site-title {
+  font-size: 3.999rem;
+  letter-spacing: 3px;
+  float: left;
+  background-color: rgb(231, 231, 231);
+  color: #213849;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.btn-square_new {
+  position: absolute;
+  top: 130px;
+  left: 500px;
+  padding: 0.99em 1.5em;
+  margin-top: 6px;
+  text-decoration: none;
+  background: #213849;
+  color: #fff;
+  border-bottom: solid 4px #213849;
+  border-radius: 1.8px;
+  font-family: serif;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+}
+
+.btn-square_new:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+/* -------------contents 部分テンプレ------------ */
+
+.all_wrapper {
+  background-color: rgb(231, 231, 231);
+  color: #213849;
+  padding-bottom: 10px;
+  height: auto;
+  min-height: 500px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.blog {
+  width: 1100px;
+  height: auto;
+  background-color: white;
+  padding: 20px 20px 10px 20px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px #374047;
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  position: relative;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border: 0.4px solid #bec9d1;
+  float: right;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.blog_text {
+  float: right;
+}
+
+p.title {
+  width: 800px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+
+}
+
+p.text {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 250px;
+  overflow: scroll;
+  word-wrap: break-word;
+  white-space: pre;
+  display: block;
+}
+
+.btn {
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.btn-square_edit {
+  display: inline-block;
+  padding: 0.2em 1em;
+  margin-left: 10px;
+  text-decoration: none;
+  background: #213849;
+  color: #fff;
+  border: solid 1px #213849;
+  border-radius: 1px;
+  letter-spacing: 0.1em;
+  font-family: serif;
+  opacity: 0.9;
+}
+
+.btn-square_edit:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+.btn-square_del {
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  margin-left: 10px;
+  text-decoration: none;
+  background: #fff;
+  color: #6f8da3;
+  border: solid 1px #6f8da3;
+  border-radius: 1px;
+  letter-spacing: 0.1em;
+  font-family: serif;
+}
+
+.btn-square_del:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+.paginate {
+  font-family: serif;
+  font-size: 20px;
+  color: rgb(2, 2, 58);
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+
+/* -------------footer------------ */
+
+.blog_title {
+  border-left: 5px solid #374047;
+  border-bottom: 1px dashed #374047;
+  width: 900px;
+  margin-bottom: 70px;
+  padding-left: 10px;
+}
+
+.page_top {
+  background-color: rgb(231, 231, 231);
+}
+
+.footer {
+  width: 100%;
+  border-top: 0.4px solid #bec9d1;
+  opacity: 0.9;
+  height: 25px;
+  z-index: 1;
+  background-color: rgb(34, 34, 34);
+}
+
+/* --------------sign up------------- */
+
+.header_2 {
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 50px;
+  border-bottom: 0.4px solid #bec9d1;
+}
+
+.all {
+  padding: 10px 150px 10px;
+}
+
+.device_title {
+  border-left: 5px solid #374047;
+  border-bottom: 1px dashed #374047;
+  width: 600px;
+  font-family: serif;
+  padding-left: 10px;
+}
+
+.back-ground {
+  background-color: rgb(231, 231, 231);
+  color: #374047;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+.field-wrapper {
+  width: 950px;
+  height: auto;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px #374047;
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.login_btn {
+  text-decoration: none;
+}
+
+/* --------------フォーム-------------- */
+
+input[type="email"] {
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(2, 2, 58)
+}
+
+input[type="password"] {
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(2, 2, 58)
+}
+
+input[type="submit"] {
+  margin: 30px;
+  width: 100px;
+  height: 700px;
+  color: rgb(2, 2, 58);
+  padding: 600px;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(2, 2, 58)
+}
+
+.text_area {
+  resize: horizontal;
+  max-width: 900px;
+  height: 500px;
+  font-size: 20px;
+  color: rgb(2, 2, 58)
+}
+
+.sub_btn {
+  padding: 100px;
+  font-size: 1.2em;
+
+}
+
+
+/*------------Reset CSS------------*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.center {
+  margin: 0 auto;
+  box-sizing: border-box;
+}

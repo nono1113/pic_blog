@@ -1,0 +1,50 @@
+<header class="header_2">
+  <a><%= link_to "- Create Free Blogs -", root_path, class:"title_2" %></a>
+</header>
+
+<div class ="back-ground">
+<br>
+<div class= "all">
+<h2 class="device_title">Sign up</h2>
+<br>
+
+<div class="field-wrapper">
+<code>ここで新規登録ができるよ。</code>
+<br>
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="field">
+   <a>Email</a>
+   <code>    ---アドレスを入力してね。---</code><br>
+    <div class="email"><%= f.email_field :email, autofocus: true, autocomplete: "email" %></div>
+  </div>
+  <br>
+  <div class="field">
+   <a>Password</a>
+   <code>    ---パスワードを入力してね。---</code><br>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+<br>
+  <div class="field">
+  <a>Password Confirmation</a>
+  <code>    ---パスワードをもう一回入力してね。---</code><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+<br>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+</div>
+<div class="uk-placeholder"></div>
+<br>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+
+<div class= "footer">
+</div>

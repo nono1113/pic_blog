@@ -1,0 +1,11 @@
+<div class= "blog">
+      <img calss =img src= "<%= free.image %>" width="250">
+      <div class="blog_text">
+      <p class ="title"><%= free.title %></p>
+      <p class ="text"><%= free.text %></p>
+      </div>
+       <div class="btn">
+        <%= link_to "EDIT", edit_free_path(free.id), class:"btn-square_edit"%>
+        <%= link_to "DELETE", "/frees/#{free.id}", method: :delete, class:"btn-square_del"%>
+      </div>
+    </div>

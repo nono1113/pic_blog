@@ -1,0 +1,35 @@
+<header class="header">
+  <a class= "title"> - Create Free Blogs -</a>
+    <% if user_signed_in? %>
+    <li><%= link_to "Log Out", destroy_user_session_path, method: :delete ,class:"log_out" %></li>
+    <% else %>
+    <li><%= link_to "Sign Up", new_user_registration_path, class:"sign_up" %></li>
+    <li><%= link_to "Log In", new_user_session_path, class:"log_in" %></li>
+    <% end %>
+</header>
+
+<div class="about">
+  <div class= "site-title-wrapper">
+    <h2 class="site-title">{Pic Blogs}</h2>
+    <a>
+     <%= link_to "- NEW Blogging !! -", new_free_path, class:"btn-square_new" %>
+    </a>
+    </div>
+</div>
+
+<div class="all_wrapper">
+<br>
+<div class="paginate"><%= paginate(@frees) %></div>
+<div class="center">
+  <% @frees.each do |free| %>
+   <%= render partial: "free", locals: { free: free } %> 
+  <% end %>
+</div>
+<div class="paginate"><%= paginate(@frees) %></div>
+</div>
+
+<p class="page_top"><%= link_to "Page top >>", root_path, class:"title_2" %></p>
+
+
+<div class= "footer">
+</div>
